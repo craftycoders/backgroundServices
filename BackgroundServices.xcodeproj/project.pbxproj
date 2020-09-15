@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		DEE4FDE9251149420001CA18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE4FDE8251149420001CA18 /* AppDelegate.swift */; };
 		DEE4FDEB251149420001CA18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE4FDEA251149420001CA18 /* SceneDelegate.swift */; };
-		DEE4FDED251149420001CA18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE4FDEC251149420001CA18 /* ViewController.swift */; };
+		DEE4FDED251149420001CA18 /* AudioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE4FDEC251149420001CA18 /* AudioVC.swift */; };
 		DEE4FDF0251149420001CA18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE4FDEE251149420001CA18 /* Main.storyboard */; };
 		DEE4FDF2251149430001CA18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE4FDF1251149430001CA18 /* Assets.xcassets */; };
 		DEE4FDF5251149430001CA18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE4FDF3251149430001CA18 /* LaunchScreen.storyboard */; };
 		DEE4FE00251149430001CA18 /* BackgroundServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE4FDFF251149430001CA18 /* BackgroundServicesTests.swift */; };
 		DEE4FE0B251149430001CA18 /* BackgroundServicesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE4FE0A251149430001CA18 /* BackgroundServicesUITests.swift */; };
+		DEE4FE1925114CDD0001CA18 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE4FE1825114CDD0001CA18 /* HomeVC.swift */; };
+		DEE4FE2025114F2A0001CA18 /* WhatYouWant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DEE4FE1D25114F2A0001CA18 /* WhatYouWant.mp3 */; };
+		DEE4FE2125114F2A0001CA18 /* FeelinGood.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DEE4FE1E25114F2A0001CA18 /* FeelinGood.mp3 */; };
+		DEE4FE2225114F2A0001CA18 /* IronBacon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DEE4FE1F25114F2A0001CA18 /* IronBacon.mp3 */; };
+		DEE4FE24251154040001CA18 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE4FE23251154040001CA18 /* LocationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,7 @@
 		DEE4FDE5251149420001CA18 /* BackgroundServices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundServices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE4FDE8251149420001CA18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEE4FDEA251149420001CA18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DEE4FDEC251149420001CA18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEE4FDEC251149420001CA18 /* AudioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVC.swift; sourceTree = "<group>"; };
 		DEE4FDEF251149420001CA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEE4FDF1251149430001CA18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEE4FDF4251149430001CA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		DEE4FE06251149430001CA18 /* BackgroundServicesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackgroundServicesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE4FE0A251149430001CA18 /* BackgroundServicesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundServicesUITests.swift; sourceTree = "<group>"; };
 		DEE4FE0C251149440001CA18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE4FE1825114CDD0001CA18 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		DEE4FE1D25114F2A0001CA18 /* WhatYouWant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = WhatYouWant.mp3; path = "BackgroundServices/Supporting Files/WhatYouWant.mp3"; sourceTree = SOURCE_ROOT; };
+		DEE4FE1E25114F2A0001CA18 /* FeelinGood.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = FeelinGood.mp3; path = "BackgroundServices/Supporting Files/FeelinGood.mp3"; sourceTree = SOURCE_ROOT; };
+		DEE4FE1F25114F2A0001CA18 /* IronBacon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = IronBacon.mp3; path = "BackgroundServices/Supporting Files/IronBacon.mp3"; sourceTree = SOURCE_ROOT; };
+		DEE4FE23251154040001CA18 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				DEE4FDE7251149420001CA18 /* BackgroundServices */,
+				DEE4FE1C25114F0D0001CA18 /* Resources */,
 				DEE4FDFE251149430001CA18 /* BackgroundServicesTests */,
 				DEE4FE09251149430001CA18 /* BackgroundServicesUITests */,
 				DEE4FDE6251149420001CA18 /* Products */,
@@ -101,7 +112,9 @@
 			children = (
 				DEE4FDE8251149420001CA18 /* AppDelegate.swift */,
 				DEE4FDEA251149420001CA18 /* SceneDelegate.swift */,
-				DEE4FDEC251149420001CA18 /* ViewController.swift */,
+				DEE4FDEC251149420001CA18 /* AudioVC.swift */,
+				DEE4FE1825114CDD0001CA18 /* HomeVC.swift */,
+				DEE4FE23251154040001CA18 /* LocationVC.swift */,
 				DEE4FDEE251149420001CA18 /* Main.storyboard */,
 				DEE4FDF1251149430001CA18 /* Assets.xcassets */,
 				DEE4FDF3251149430001CA18 /* LaunchScreen.storyboard */,
@@ -126,6 +139,16 @@
 				DEE4FE0C251149440001CA18 /* Info.plist */,
 			);
 			path = BackgroundServicesUITests;
+			sourceTree = "<group>";
+		};
+		DEE4FE1C25114F0D0001CA18 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DEE4FE1E25114F2A0001CA18 /* FeelinGood.mp3 */,
+				DEE4FE1F25114F2A0001CA18 /* IronBacon.mp3 */,
+				DEE4FE1D25114F2A0001CA18 /* WhatYouWant.mp3 */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +255,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE4FE2025114F2A0001CA18 /* WhatYouWant.mp3 in Resources */,
 				DEE4FDF5251149430001CA18 /* LaunchScreen.storyboard in Resources */,
+				DEE4FE2125114F2A0001CA18 /* FeelinGood.mp3 in Resources */,
 				DEE4FDF2251149430001CA18 /* Assets.xcassets in Resources */,
+				DEE4FE2225114F2A0001CA18 /* IronBacon.mp3 in Resources */,
 				DEE4FDF0251149420001CA18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEE4FDED251149420001CA18 /* ViewController.swift in Sources */,
+				DEE4FE24251154040001CA18 /* LocationVC.swift in Sources */,
+				DEE4FDED251149420001CA18 /* AudioVC.swift in Sources */,
+				DEE4FE1925114CDD0001CA18 /* HomeVC.swift in Sources */,
 				DEE4FDE9251149420001CA18 /* AppDelegate.swift in Sources */,
 				DEE4FDEB251149420001CA18 /* SceneDelegate.swift in Sources */,
 			);
