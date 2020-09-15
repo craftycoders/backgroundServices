@@ -12,7 +12,7 @@ import MapKit
 class LocationVC: UIViewController {
     
   @IBOutlet weak var mapView: MKMapView!
-    
+
   private var locations: [MKPointAnnotation] = []
   
   private lazy var locationManager: CLLocationManager = {

@@ -20,6 +20,7 @@
 		DEE4FE2125114F2A0001CA18 /* FeelinGood.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DEE4FE1E25114F2A0001CA18 /* FeelinGood.mp3 */; };
 		DEE4FE2225114F2A0001CA18 /* IronBacon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DEE4FE1F25114F2A0001CA18 /* IronBacon.mp3 */; };
 		DEE4FE24251154040001CA18 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE4FE23251154040001CA18 /* LocationVC.swift */; };
+		DEE4FE26251166C60001CA18 /* FiniteTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE4FE25251166C60001CA18 /* FiniteTaskVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		DEE4FE1E25114F2A0001CA18 /* FeelinGood.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = FeelinGood.mp3; path = "BackgroundServices/Supporting Files/FeelinGood.mp3"; sourceTree = SOURCE_ROOT; };
 		DEE4FE1F25114F2A0001CA18 /* IronBacon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = IronBacon.mp3; path = "BackgroundServices/Supporting Files/IronBacon.mp3"; sourceTree = SOURCE_ROOT; };
 		DEE4FE23251154040001CA18 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
+		DEE4FE25251166C60001CA18 /* FiniteTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiniteTaskVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +114,7 @@
 			children = (
 				DEE4FDE8251149420001CA18 /* AppDelegate.swift */,
 				DEE4FDEA251149420001CA18 /* SceneDelegate.swift */,
-				DEE4FDEC251149420001CA18 /* AudioVC.swift */,
-				DEE4FE1825114CDD0001CA18 /* HomeVC.swift */,
-				DEE4FE23251154040001CA18 /* LocationVC.swift */,
+				DEE4FE2725116B560001CA18 /* ViewControllers */,
 				DEE4FDEE251149420001CA18 /* Main.storyboard */,
 				DEE4FDF1251149430001CA18 /* Assets.xcassets */,
 				DEE4FDF3251149430001CA18 /* LaunchScreen.storyboard */,
@@ -149,6 +149,17 @@
 				DEE4FE1D25114F2A0001CA18 /* WhatYouWant.mp3 */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DEE4FE2725116B560001CA18 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DEE4FDEC251149420001CA18 /* AudioVC.swift */,
+				DEE4FE25251166C60001CA18 /* FiniteTaskVC.swift */,
+				DEE4FE1825114CDD0001CA18 /* HomeVC.swift */,
+				DEE4FE23251154040001CA18 /* LocationVC.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +298,7 @@
 			files = (
 				DEE4FE24251154040001CA18 /* LocationVC.swift in Sources */,
 				DEE4FDED251149420001CA18 /* AudioVC.swift in Sources */,
+				DEE4FE26251166C60001CA18 /* FiniteTaskVC.swift in Sources */,
 				DEE4FE1925114CDD0001CA18 /* HomeVC.swift in Sources */,
 				DEE4FDE9251149420001CA18 /* AppDelegate.swift in Sources */,
 				DEE4FDEB251149420001CA18 /* SceneDelegate.swift in Sources */,
