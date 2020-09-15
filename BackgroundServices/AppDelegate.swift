@@ -7,15 +7,54 @@
 //
 
 import UIKit
+import BackgroundTasks
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        BGTaskScheduler.shared.register(forTaskWithIdentifier: "craftycoders.io.BackgroundServices.testBGFetch", using: DispatchQueue.global()) { task in
+            self.handleAppRefreshTask(task)
+        }
         return true
+    }
+        
+    func handleAppRefreshTask(_ task: BGTask) {
+        let queue = OperationQueue()
+        queue.maxConcurrentOperationCount = 1
+        queue.addOperation {
+            self.appRefreshOperation()
+        }
+
+        task.expirationHandler = {
+            queue.cancelAllOperations()
+        }
+
+        let lastOperation = queue.operations.last
+        lastOperation?.completionBlock = {
+            task.setTaskCompleted(success: !(lastOperation?.isCancelled ?? false))
+        }
+
+        scheduleAppRefresh()
+    }
+    
+    func scheduleAppRefresh() {
+        do {
+            let request = BGAppRefreshTaskRequest(identifier: "craftycoders.io.BackgroundServices.testBGFetch")
+            request.earliestBeginDate = Date(timeIntervalSinceNow: 5)
+            try BGTaskScheduler.shared.submit(request)
+        } catch {
+            print(error)
+        }
+    }
+    
+    func appRefreshOperation(){
+        print("App refresh operation")
+        
+        //Run the app using a real device, hit pause then run this code below in the debugger. 
+        //e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateLaunchForTaskWithIdentifier:@"craftycoders.io.BackgroundServices.testBGFetch"]
     }
 
     // MARK: UISceneSession Lifecycle
